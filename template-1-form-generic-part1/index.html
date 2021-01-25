@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web de ...</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- El script de la librería-->
+    <script src="js/html2pdf.bundle.min.js"></script>
+    <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
+    <script src="js/script.js"></script>
+    <!-- Algunos estilos -->
+
+</head>
+<body>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                
+                
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Contacto</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Siguenos en Twitter</a></li>
+                  <li><a href="#" class="text-white">Enlace a Facebook</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <strong>Comprobante</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col offset-md-3">
+              <div class="card shadow-sm">
+    
+                <div class="card-body">
+                
+                    <form>
+                        <div class="form-group my-4">
+                            <label for="IdNombre">Nombre del producto</label>
+                            <input type="text" class="form-control" id="idDetalle" placeholder="Ingrese detalle de un producto">
+                            <small id="emailHelp" class="form-text text-muted">Ingrese nombre de un producto.</small>
+                          </div>
+
+                        <div class="form-group my-4">
+                          <label for="IdDetalle">Detalle del producto</label>
+                          <input type="text" class="form-control" id="idDetalle" placeholder="Ingrese detalle de un producto">
+                          <small id="emailHelp" class="form-text text-muted">Ingrese el detalle del producto.</small>
+                        </div>
+
+                        <div class="form-group ">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="IdUnidad">Unidad</label>
+                                    <input type="number" min="0" class="form-control" id="IdUnidad">
+                                </div>
+                                <div class="col">
+                                    <label for="IdPrecio">Precio unitario</label>
+                                    <input type="number" min="0" class="form-control" id="IdPrecio">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group my-4">
+                            <button id="btnGuardar" type="submit" class="btn btn-success" title="Se imprimira un archivo PDF con el resumen de la venta">Guardar</button>
+
+                            <button id="btnAgregar" class="btn btn-primary mx-2" title="se agrega el producto a un listado para armar un inventario con todos los productos que haya registrado">agregar producto</button>
+                        </div>
+                      </form>
+     
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
